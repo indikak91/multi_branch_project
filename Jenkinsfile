@@ -2,8 +2,7 @@ pipeline{
     agent any
     stages {
         stage ('Production Branch') {
-            steps{
-                checkout scm
+            steps{               
                 sh 'echo production branch'
             }
         }
